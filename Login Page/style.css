@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    font-family: 'ubuntu';
+    box-sizing: border-box;
+}
+body{
+    /* margin: 0; */
+    background-image: url(./Back-Img.svg);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    padding: 25px;
+}
+.card{
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    border-radius: 1.25rem;
+}
+.form>*{
+    margin: 10px;
+    width: 100%;
+    padding: 0 30px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    
+
+}
+
+h2{
+    font-size: xx-large;
+    font-weight: 900;
+    margin: 0;
+}
+.card>h3{
+    font-weight: light  ;
+    font-size: 15px;
+    color:#727070
+}
+.form>input{
+    border:1px solid #e0e0e0
+}
+input::placeholder{
+    color: #cac8c8;
+    font-weight: 900;
+}
+ button{
+    /* color: #e0e0e0; */
+    background-color: #65c8ff;
+    color:#fff;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+
+input:hover{
+    border:1px solid black;
+}
+button:hover{
+    background-color: #143d81;
+    cursor: pointer;
+}
+@media (width>=500px){
+    .card{
+        width: 360px;
+        height: 400px;
+    }
+}
