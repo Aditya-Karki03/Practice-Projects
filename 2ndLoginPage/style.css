@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    margin: 0;
+    place-items: center;
+    height: 100vh;
+    padding: 0 35px;
+    background-image: url('./Back-Img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rotate 6s infinite alternate linear;
+}
+.login-card{
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    border-radius: 1.25rem;
+    padding: 20px;
+    position: relative;
+    
+}
+h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+h3{
+    color: #808080;
+    margin-bottom: 40px;
+}
+.form{
+    display:grid;
+    gap: 20px;
+    width: 100%;
+    text-align: left;
+}
+.form>input, .form>button{
+    height: 50px;
+    border-radius: 1.25rem;   
+    border: 1px solid #c0c0c0;
+    font-weight: 600;
+}
+button{
+    background-color: #216ce7;
+    color:#fff;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+}
+.form>input{
+ padding: 25px;
+}
+input:hover{
+    border:1px solid black;
+}
+button:hover{ 
+    cursor:pointer;
+    background-color: #10449A;
+}
+a{
+    color: #10449A;
+}
+@keyframes rotate{
+    100%{
+        background-position: 15% 50%;
+    }
+}
+@media(width>=500px){
+    .login-card{
+        width: 360px;
+    }
+}
