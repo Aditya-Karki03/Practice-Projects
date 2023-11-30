@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: rgb(236, 233, 233);
+}
+.whole-gmail{
+    position: relative;
+}
+.header{
+    display: flex;
+    padding: 10px 10px 10px 15px;
+    justify-content: space-around;
+    /* position: relative; */
+   /* gap: 90px; */
+}
+.gmail-img{
+    display: flex;
+}
+button{
+    background-color: rgb(236, 233, 233);;
+}
+button img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+.img-holder{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+}
+.gmail-img img{
+    width: 40px;
+    height: 40px;
+}
+.hamburger{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    align-content: left;
+}
+.gmail-img{
+    margin-left: -100px;
+}
+.gmail-img button{
+    font-size: 30px;
+    padding: 0;
+    color: rgb(120, 114, 114);
+    border: none;
+    margin-left: 10px;
+}
+.hamburger i, button i{
+    font-size: 25px;
+}
+input{
+    height: 40px;
+    width: 500px;
+    margin-left: -90px;
+    border-radius: 50px;
+    padding-left: 40px;
+    font-size: 15px;
+    border: none;
+   
+}
+.mail-holder{
+    width: 85vw;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;   
+    translate: -50% 0; 
+    border-radius: 20px;
+}
+.options{
+    display: flex;
+    margin: 0;
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    place-items: center;
+    gap: 25px;
+}
+button{
+    
+}
