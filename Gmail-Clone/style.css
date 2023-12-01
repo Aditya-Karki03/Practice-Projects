@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
 }
 body{
@@ -12,8 +12,7 @@ body{
     display: flex;
     padding: 10px 10px 10px 15px;
     justify-content: space-around;
-    /* position: relative; */
-   /* gap: 90px; */
+    
 }
 .gmail-img{
     display: flex;
@@ -87,4 +86,105 @@ input{
 }
 button{
     
+} */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: rgb(236, 233, 233);
+}
+.header{
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+.gmail-img, .options{
+    display: flex;
+   position: relative;
+}
+
+.gmail-img img{
+    width: 40px;
+    height: 40px;
+    margin: 4px 8px 0 0;
+}
+
+.img-holder{
+    width: 31px;
+    height: 31px;
+   border-radius: 50%; 
+    position: relative;
+    border: none;
+}
+button img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    translate: -50% -50%;
+}
+.hamburger{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 5px;
+    /* align-content: left; */
+}
+.gmail-img button{
+    font-size: 25px;
+    padding: 0;
+    color: rgb(120, 114, 114);
+    border: none;
+    letter-spacing: -2px;
+}
+input{
+    height: 40px;
+    width: 500px;
+    margin: 4px 40px 0 80px;
+    /* margin-left: -90px; */
+    border-radius: 50px;
+    padding-left: 40px;
+    font-size: 15px;
+    /* border: none; */
+   
+}
+.options{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 50px;
+    justify-content: space-between; 
+    align-items: center;
+}
+.support button, .settings button, .more-google-options button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.hamburger i, button i{
+    font-size: 25px;
+}
+.mail-holder{
+    width: 85vw;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;   
+    translate: -50% 0; 
+    border-radius: 20px;
+}
+button{
+    background-color: rgb(236, 233, 233);
+}
+.hamburger:hover, .support button:hover,.settings button:hover, .more-google-options button:hover{
+    cursor: pointer;
+    background-color: rgb(185, 179, 179);
+    transition: 0.2s;
 }

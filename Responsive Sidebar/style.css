@@ -1,37 +1,81 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
 }
-ul{
-    margin: 0;
-    /* padding:15px 0 15px 20px; */
-    padding: 0;
-    list-style-type: none;
-    width: 200px;
-    background-color: lightgray;
+.menus{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: #A9B388;
+    overflow: hidden;
 }
-/* ul>li{
-    height: 50px;
-    margin: 10px 0;
-    padding-left: 10px;
-  
+.header-menu-holder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
 }
-ul>li:hover{
-    background-color: gray;
-} */
-li{
-    border: 1px solid black
+header{
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+    
+    
 }
-li a{
-    display: block;
+header button{
+    display: flex;
+    height: 65px;
+    justify-content: flex-start;
+    align-items: center;
+}
+#header-button{
+    background-color: #5F6F52;
+    border: none;
+    padding-left: 20px;
+}
+.menu-holder{
+    display: grid;
+    /* gap: 20px; */
+}
+nav button{
+    margin-top: 0;
+    height: 70px;
+    background-color: #A9B388;
+    border: 0;
+    text-align: left;
+    padding-left: 20px;
+}
+span{
+    font-size: 20px;
     padding: 10px;
-    text-align: center;
+    font-weight: 300;
+    color: #FEFAE0;
+    letter-spacing: 2px;
+    margin-left: 5px;
 }
-li a:hover{
-    background-color: gray;
-    color: white;
+.line{
+    border-bottom: 1px solid #FEFAE0;
+    margin-bottom: 10px;
 }
-.active{
-    background-color: #04AA6D;
-    color: white;
+i{
+    color: #FEFAE0;
+    font-size: 20px;
+}
+#header-button:hover{
+    border-left:5px solid #FEFAE0;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+nav button:hover, button:hover i, button:hover span{
+    border-left:5px solid #FEFAE0;     /* FEFAE0 */
+    transition: all 0.25s;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    color: #000;  /*B99470*/
 }

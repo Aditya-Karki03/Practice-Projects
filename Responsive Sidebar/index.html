@@ -4,21 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sidebar</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ul>
-      <!-- shortcut command for the above -->
-      <!-- li*3>a[href='#']{Home} -->
-
-      <li><a href="#">Home</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Contact</a></li>      
-      <li><a href="#">About</a></li>
-    </ul>
+    <nav class="menus">
+      <div class="header-menu-holder">
+        <header>
+          <button type="button" id="header-button">
+            <i class="bx bx-menu"></i>
+          </button>
+        </header>
+        <nav class="menu-holder">
+          <button type="button">
+            <i class="bx bx-user"></i><span>Accounts</span>
+          </button>
+          <button type="button" class="line">
+            <i class="bx bx-cog"></i><span>Settings</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-shape-circle"></i><span>Blockchain</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-data"></i><span>Databases</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-speaker"></i><span>AudioVibe</span>
+          </button>
+          <button type="button" class="line">
+            <i class="bx bx-music"></i><span>Soundblast</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-folder"></i><span>Folders</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-layer"></i><span>Levels</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-lock"></i><span>Security</span>
+          </button>
+        </nav>
+      </div>
+    </nav>
   </body>
+  <script src="script.js"></script>
 </html>
