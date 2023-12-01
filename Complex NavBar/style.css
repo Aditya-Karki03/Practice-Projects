@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(61, 61, 61);
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    
+}
+.Navigation-container{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    position: relative;
+}
+.horizontal-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 15px;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.75);
+}
+h2{
+    font-size: 20px;
+    margin: 15px;     
+}
+h2:hover{
+    color: rgba(255, 255, 255, 0.75);
+}
+button{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .Navigation-container{
+        position: relative;
+    }
+    h2{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.25s;
+    }
+   /* .vertical-nav-bar{
+    width: 270px;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    
+    background: rgb(0,0,0,0.5);
+    transform: translateX(-100%);
+   } */
+   .horizontal-bar{
+    /* position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100%;
+    border: 2px solid red;
+    padding: 20px;
+    display: flex; */
+    
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column; */
+    
+    
+    /* position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 270px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #000; */
+    /* display: flex;
+    flex-direction: column; */
+   }
+   .links{
+    display: flex;
+    width: 270px;
+    height: 100%;
+    background: rgb(0,0,0);
+    margin: 0;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    /* margin: 40px 20px ; */
+    transform: translate(-100%,0);
+    transition: 0.25s;
+   }
+   header{
+    height: 60px;
+    background-color: #000;
+   }
+   button{
+    display: flex;
+    position: absolute;
+    transform: translate(50%,50%);
+    background-color: #000;
+    border: 1px solid black;
+}
+button span{
+    color: #fff;
+}
+button:hover span{
+    color: rgba(255, 255, 255, 0.75);
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+}
