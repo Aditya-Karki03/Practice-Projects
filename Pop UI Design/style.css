@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(52, 49, 49);
+    font-family: 'ubuntu';
+}
+.ui-container{
+    position: relative;
+    height: 100vh;
+}
+.pop-up{
+    /* display: none; */
+    visibility: hidden;
+    transition: 0.25s;
+}
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60px;
+    width: 120px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 1rem;
+}
+.pop-up{
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    background-color: rgb(52, 49, 49);
+    color: #fff;
+    /* transition: 0.25s; */
+}
