@@ -3,43 +3,87 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(52, 49, 49);
+    margin: 0;
     font-family: 'ubuntu';
+    background-color: #393636;
 }
-.ui-container{
+.big-container{
     position: relative;
     height: 100vh;
+    width: 100vw;
 }
-.pop-up{
-    /* display: none; */
-    visibility: hidden;
-    transition: 0.25s;
+button, .pop-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 button{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 60px;
     width: 120px;
-    font-size: 15px;
+    height: 50px;
+    font-weight: 560;
     background-color: #000;
     color: #fff;
+    border-radius: 0.5rem;
+    font-size: 15px;
     border: 1px solid #000;
-    border-radius: 1rem;
 }
-.pop-up{
+.pop-container{
+    /* border: 1px solid red; */
     width: 400px;
     height: 200px;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 1rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transform: translate(-50%,-50%);
-    background-color: rgb(52, 49, 49);
+    padding: 20px 20px;
+    border-radius: 15px;
     color: #fff;
-    /* transition: 0.25s; */
+    background-color: #393636;
+    visibility: hidden;
+}
+.pop-container p{
+    color: darkgray;
+}
+body.closed .pop-container{
+    opacity: 0;
+    visibility: hidden;
+}
+body.open .pop-container{
+    opacity: 1;
+    visibility: visible;
+    animation: make-pop-up-visible 1s;
+}
+body.closed .pop-up-background{
+    opacity: 0;
+    visibility: hidden;
+}
+body.open .pop-up-background{
+    opacity: 1;
+    visibility: visible;
+    animation: background-maker 0.5s;
+}
+.pop-up-background{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0,0,0,0.5);
+    visibility: hidden;
+    /* animation: background-maker 5s; */
+}
+@keyframes background-maker {
+    0%{
+        transform: scale(0,0.005);
+    }
+    33%,66%{
+        transform: scale(1,0.005);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@keyframes make-pop-up-visible{
+    0%,66%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
 }
