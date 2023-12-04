@@ -68,10 +68,10 @@ body.open .pop-up-background{
 }
 @keyframes background-maker {
     0%{
-        transform: scale(0,0.005);
+        transform: scale(0,0.0005);
     }
     33%,66%{
-        transform: scale(1,0.005);
+        transform: scale(1,0.0005);
     }
     100%{
         transform: scale(1,1);
