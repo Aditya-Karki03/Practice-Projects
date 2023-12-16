@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+body{   
+    margin: 0; 
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdbf0;
+}
+.container{
+    /* border: 1px solid black; */
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    padding: 50px 60px;
+    background-color: #bab2dc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #686262;
+}
+input, label {
+   
+   margin-top: 30px;
+}
+label{
+    font-weight: 500;
+    font-size: 17px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #dfdbf0;
+}
+button, h1{
+    font-weight: 900;
+}
+button{
+    margin-top: 30px;
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* font-weight: 900; */
+    background-color: #340FDE;
+    color: #fff;
+}
+input:hover{
+    border: 1px solid #340FDE;
+    background-color: #fff;
+    transition: 0.2s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #190a5c;
+}
+/* @media(max-width: 436px) and (min-width: 310px){
+    .container{
+        width: 300px;
+    }
+} */
