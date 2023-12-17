@@ -11,24 +11,31 @@
     />
   </head>
   <body>
-    <div class="App-holder">
-      <label>@AdityaKarki</label>
-      <hr />
-      <div class="header">
-        <h1>Todo List App</h1>
+    <div class="main-container">
+      <div class="App-holder">
+        <label>@AdityaKarki</label>
+        <div class="ruler">
+          <hr />
+        </div>
+        <div class="header">
+          <h1>Todo List App</h1>
+        </div>
+        <div class="input-button">
+          <input type="text" placeholder="ENTER TODO" />
+          <button type="button">+</button>
+        </div>
       </div>
-      <div class="input-button">
-        <input type="text" placeholder="ENTER TODO" />
-        <button type="button">+</button>
-      </div>
-      <div class="list-items">
+      <div class="list-items hidden" id="demo">
         <ul>
           <li>
-            <input type="checkbox" />Work Out <i class="bx bx-edit"></i
-            ><i class="bx bxs-trash"></i>
+            <input type="checkbox" /><label class="itemName"></label>
+            <div class="box">
+              <i class="bx bx-edit"></i><i class="bx bxs-trash"></i>
+            </div>
           </li>
         </ul>
       </div>
     </div>
   </body>
+  <script src="mainAppScript.js"></script>
 </html>
