@@ -31,6 +31,12 @@ add_button.addEventListener('click',()=>{
     
 })
 
+function newElement(){
+    const input=document.createElement('input');
+    input.setAttribute('type','text');
+    return input;
+}
+
 function innerHTMLchanger(iterator,TodoItem,input){
     TodoItem.innerHTML=input;
 }
@@ -54,6 +60,12 @@ bigContainer.addEventListener('click',(e)=>{
             }
         }
     }
+    const EditButt=e.target.classList.contains('box-edit')
+    if(EditButt){
+        // const inputEle=newElement();
+        // EditButt.appendChild(inputEle);
+        alert('Helo');
+    }
 })
 
 // const inputBox=document.querySelector('.tick');
@@ -62,3 +74,7 @@ bigContainer.addEventListener('click',(e)=>{
 //         e.target.classList.toggle('checked');
 //     }
 // })
+const editButton=document.querySelector('bx-edit');
+editButton.addEventListener('click',()=>{
+    alert('Hello this is edit button')
+})
