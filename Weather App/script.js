@@ -51,6 +51,6 @@ const iconChanger=(obj)=>{
         // icon.classList.add('cloudy')
         // icon.style.Color = '#c2bfba';
         document.querySelector('.bxs-cloud').style.color='#c2bfba'
-
+//no changes
     }
 }
