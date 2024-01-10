@@ -26,8 +26,8 @@ async function weather(city){
 
 const temp=document.querySelector('.temp');
 const loc=document.querySelector('.state');
-const Humidity=document.querySelector('.Humidity')
-const windSpeed=document.querySelector('.wind');
+const Humidity=document.querySelector('.current-condition')
+const windSpeed=document.querySelector('.wind-speed');
 
 function weatherChanger(obj){
     // let tempInKelvin=
@@ -35,8 +35,9 @@ function weatherChanger(obj){
     obj.main.temp=Math.round(obj.main.temp);
     temp.innerHTML=`<h2>${obj.main.temp}°C</h2>`
     loc.innerHTML=`<h2>${obj.name}</h2>`
-    Humidity.textContent=`${obj.main.humidity}% Humidity`;
-    windSpeed.textContent=`${obj.wind.speed} km/h Wind Speed`
+    Humidity.innerHTML= `<i class="bx bx-water"></i><div class="more-info Humdity">${obj.main.humidity}% Humidity</div>`  
+    windSpeed.innerHTML=`<i class="bx bx-wind"></i>
+    <div class="more-info wind">${obj.wind.speed} km/h Wind Speed</div>`
 }
 
 const iconChanger=(obj)=>{
@@ -53,4 +54,4 @@ const iconChanger=(obj)=>{
         document.querySelector('.bxs-cloud').style.color='#c2bfba'
 //no changes
     }
-}
+}//``;
