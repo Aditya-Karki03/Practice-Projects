@@ -13,7 +13,8 @@ body{
     /* height: 100vh; */
     width: 400px;
     height: 500px;
-    background-image: linear-gradient(to bottom right,#95d6ea,#62a1c7,#15719f);
+    /* background-image: linear-gradient(to bottom right,#95d6ea,#62a1c7,#15719f); */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0  100px rgba(13, 109, 228, 0.5);
     /* position: relative; */
@@ -81,7 +82,13 @@ body{
 }
 .search input:hover, .search-icon > .bx-search{
     cursor: pointer;
-
+   
+}
+.search input:hover{
+    /* outline: 1px solid #4e1313; */
+    background-color: #add6e3;
+    color: #000;
+    transition: 0.25s;
 }
 .search-icon:hover{
     background-color: #add6e3;
