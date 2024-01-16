@@ -4,20 +4,19 @@ body{
     padding: 0;
     height: 100vh;
     font-family:  "Montserrat", sans-serif;
-    
+    color:#000;
 }
 *{
     box-sizing: border-box;
+    color:#000;
 }
 .main-container{
-    /* height: 100vh; */
-    width: 400px;
-    height: 500px;
-    /* background-image: linear-gradient(to bottom right,#95d6ea,#62a1c7,#15719f); */
+    max-width: 400px;
+    max-width: 500px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0  100px rgba(13, 109, 228, 0.5);
-    /* position: relative; */
+   
 }
 .search{
     gap: 3px;
@@ -40,33 +39,33 @@ body{
     background-color: #fff;
 }
 .weather-icon{
-    height: 120px;
+    height: 150px;
     width: inherit;
-    /* position: absolute; */
     left: 50%;
     transition: 0.2s;
-    /* transform: translate(-50%); */
+    visibility: hidden;
 }
-.weather-icon i{
-    font-size: 100px;
-    
+.weather-icon img{
+   width: 150px;
+   height: 150px;    
+}
+.visible{
+    visibility: visible;
 }
 .temp{
-    /* margin: 10px; */
     height: 70px;
 }
 .temp h2, .state h2{
     font-size: 50px;
-    color: #fff;
-    /* flex-direction: column; */
+    color: #000;
 }
 .state{
     height: 50px;
 }
 .info{
     color: #fff;
-    /* gap: 10px; */
     margin-top: 40px;
+    padding-bottom: 40px;
 }
 .current-condition i, .wind-speed i{
     font-size: 30px;
@@ -85,7 +84,6 @@ body{
    
 }
 .search input:hover{
-    /* outline: 1px solid #4e1313; */
     background-color: #add6e3;
     color: #000;
     transition: 0.25s;
@@ -95,11 +93,30 @@ body{
     transition: 0.25s;
 }
 
-/* @media(max-width:412){
-    body{
-        height: 100vh;
-        display: flex;
-        flex: 1;
-    }
-    
-} */
+/* This are some utility classes */
+.flex{
+    display: flex;
+}
+.red-border{
+    border: 2px solid red;
+}
+.green-border{
+    border: 2px solid green;
+}
+.justify-content{
+    justify-content: center;
+}
+.align-items{
+    align-items: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: -40px;
+}
+.flex-direction{
+    flex-direction: column;
+}
