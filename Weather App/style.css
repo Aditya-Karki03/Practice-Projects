@@ -49,9 +49,7 @@ body{
    width: 150px;
    height: 150px;    
 }
-.visible{
-    visibility: visible;
-}
+
 .temp{
     height: 70px;
 }
@@ -69,15 +67,6 @@ body{
 }
 .current-condition i, .wind-speed i{
     font-size: 30px;
-}
-.cloudy{
-    color: #c2bfba;
-}
-.sunny{
-    color: #fcd440;
-}
-.bxs-sun{
-    color: #fcd440;
 }
 .search input:hover, .search-icon > .bx-search{
     cursor: pointer;
@@ -119,4 +108,7 @@ body{
 }
 .flex-direction{
     flex-direction: column;
+}
+.visible{
+    visibility: visible;
 }

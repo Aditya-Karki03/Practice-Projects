@@ -1,7 +1,6 @@
 const search = document.querySelector('.bx-search');
 const input = document.querySelector('.search input');
 const DivIcon = document.querySelector('.weather-icon');
-const icon = document.querySelector('.weather-icon i');
 const message = document.querySelector('#msg');
 let city;
 
