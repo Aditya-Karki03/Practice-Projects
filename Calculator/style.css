@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    border: 1px solid #000;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.cal-container{
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    height: inherit;
+}
+.operators-nums{
+    display: grid;
+    /* border: 1px solid red; */
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+    padding: 15px;
+}
+.equals{
+    grid-row: span 3;
+}
+.input{  
+    /* border: 1px solid orange;   */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input input{
+    width: 95%;
+    height: 50px;
+    font-size: 30px;
+    border: 1px solid black;
+}
