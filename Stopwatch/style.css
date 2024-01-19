@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+}
+
+.main-container{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
