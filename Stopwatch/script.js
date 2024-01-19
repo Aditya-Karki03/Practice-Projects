@@ -29,10 +29,10 @@ reset.addEventListener('click',()=>{
 
 function timer(){
     if(seconds<=9){
-        time.innerHTML=`<h1>0${hour}:0${minutes}:0${seconds}:0${milli}</h1> 1st`;
+        time.innerHTML=`<h1>0${hour}:0${minutes}:0${seconds}:0${milli}</h1>`;
     }
     else if(seconds>=10){
-        time.innerHTML=`<h1>0${hour}:0${minutes}:${seconds}:0${milli}</h1> 2nd`;
+        time.innerHTML=`<h1>0${hour}:0${minutes}:${seconds}:0${milli}</h1>`;
     }
     // time.innerHTML=`<h1>0${hour}:0${minutes}:0${seconds}:0${milli}</h1>`;
     milli++;
