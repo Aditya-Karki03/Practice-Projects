@@ -15,7 +15,7 @@ const setDate=()=>{
    
 
     const minutes=date.getMinutes();
-    console.log(minutes)
+    
     const MinutesinDegrees=Math.floor(((minutes/60)*360)+90)
     min.style.transform=`rotate(${MinutesinDegrees}deg)`
 
