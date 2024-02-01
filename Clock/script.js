@@ -7,12 +7,12 @@ let i=1;
 const setDate=()=>{
     const date=new Date();
     const seconds=date.getSeconds();
-    // if(seconds===60)    second.style.transition='0';
+    
     
     console.log(seconds)
     const secondsInDegrees=Math.floor(((seconds/60)*360)+90);
     second.style.transform=`rotate(${secondsInDegrees}deg)`
-    // console.log(secondsInDegrees)
+   
 
     const minutes=date.getMinutes();
     const MinutesinDegrees=Math.floor(((minutes/60)*360)+90)
