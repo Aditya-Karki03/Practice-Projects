@@ -18,7 +18,7 @@ body{
     /* border: 1px solid #000; */
 }
 .nav-bar>nav{
-    
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,7 +123,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
-    height: 180px;
+    min-height: 200px;
     gap: 5px;
     /* border: 1px solid #000; */
     /* padding: 0 20px; */
@@ -177,4 +177,204 @@ body{
 }
 .feature>button:hover{
     cursor: pointer;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    padding: 10px;
+}
+.title>h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.title p{
+    color: gray;
+}
+.image img{
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+}
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.image-holder{
+    
+
+    width: 270px;
+    height: 350px;
+    border: 1px solid lightgray;
+    margin: 25px;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    transition: 0.1s ease-in-out;
+}
+.image-holder:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.description h5 {
+    font-size: 17px;
+}
+
+
+.image-holder .description{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column;
+    height: 50px;
+    gap: 10px;
+    margin-top: 0;
+    /* width: 30px; */
+    /* padding: 20px 0 40px 0; */
+    
+}
+.stars{
+    /* border: 1px solid orange; */
+    margin-top: -10px;
+}
+.price-cart{
+    /* border: 1px solid #000; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 20px;
+    color: #088178;
+}
+
+.price-cart a i{
+    height: 35px;
+    width: 35px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #088178;
+    background-color: #e8f6ea;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+.price-cart span{
+    font-weight: 600;
+}
+.bxs-star{
+    color: #FDB813;
+}
+.price-cart a i:hover{
+    background-color: #088178;
+    color: #fff;
+}
+.offer{
+    background-image: url('./ImagesLogos/banner/b2.jpg');
+    border: 1px solid #000;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    margin-bottom: 20px;
+    position: relative;
+}
+.offer-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:3px solid #fff; */
+    height: 150px;
+    gap: 20px;
+}
+.offer-text p{
+    font-weight: 800;
+    font-size: 20px;
+}
+.offer-text h2{
+    font-size: 25px;
+}
+.offer-text button{
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: rgb(107, 107, 107);
+    font-size: 15px;
+}
+h2>span{
+    color: red;
+}
+.offer-text button:hover{
+    /* background-color: rgb(181, 2, 2); */
+    background-color: #088178;
+    color: #fff;
+    border: none;
+}
+.arrival-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    padding: 10px;
+    margin: 40px;
+}
+.arrival-text>h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.arrival-text p{
+    color: gray;
+}
+.sales-offer{
+    border: 2px solid #000;
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 1.5fr 1.25fr;
+    grid-template-columns: 1fr 1.25fr 1fr;
+}
+.sales-offer>.first{
+    background-image: url('./ImagesLogos/banner/b17.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 310px;
+    width: 45vw;
+    
+}
+.sales-offer>.second{
+    grid-column: span 2;
+    background-image: url('./ImagesLogos/banner/b10.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+}
+.sales-offer>.third{
+    background-image: url('./ImagesLogos/banner/b7.jpg');
+    /* height:280px; */
+}
+.sales-offer>.second, .sales-offer>.third, .sales-offer>.fourth, .sales-offer>.fifth{
+    border: 1px solid #000;
 }
