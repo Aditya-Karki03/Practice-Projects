@@ -1,6 +1,7 @@
 const SpecialChar="!@#$%^&*()";
 const num="0123456789";
 let char='abcdefghijklmnopqrstuvwxyz';
+const copyBtn=document.querySelector('#copy');
 
 let min=0;
 
@@ -73,6 +74,15 @@ CharBtn.addEventListener('click',(e)=>{
         generator();
     }
 
+})
+copyBtn.addEventListener('click',()=>{
+    navigator.clipboard.writeText(charInput.value)
+    .then(()=>{
+        alert(`Password is ${charInput.value}`);
+    })
+    .catch(err=>{
+        console.error(`Failed to copy text ${err}`);
+    })
 })
 generator();
 
