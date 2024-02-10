@@ -22,12 +22,14 @@ reset.addEventListener('click',()=>{
     let seconds=0;
     let minutes=0;
     let hour=0;
-    time.innerHTML=`<h1>0${hour}:0${minutes}:0${seconds}:0${milli}</h1> 1st`;
+    time.innerHTML=`<h1>00:00:00:00</h1>`;
+    // time.innerHTML=`<h1>0${hour}:0${minutes}:0${seconds}:0${milli}</h1>`;
 })
 
 
 
-function timer(){
+function timer(reset=false){
+   
     if(seconds<=9){
         time.innerHTML=`<h1>0${hour}:0${minutes}:0${seconds}:0${milli}</h1>`;
     }
