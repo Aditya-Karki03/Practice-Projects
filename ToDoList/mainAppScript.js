@@ -78,7 +78,8 @@ bigContainer.addEventListener('click',(e)=>{
             const input2=document.querySelector('.inp');
             input2.addEventListener('change',(e)=>{
                 editedValue=input2.value;
-                inputEditor(editedValue)
+                const parentEle=input2.parentElement;
+                inputEditor(editedValue,parentEle)
                 // console.log(editedValue)
         })
             console.log(addedList.firstElementChild.lastElementChild.innerHTML.value);
@@ -89,7 +90,8 @@ bigContainer.addEventListener('click',(e)=>{
 
     }
 })
-const inputEditor=(edVal)=>{
-    const li=document.querySelector('.itemName');
-    li.innerHTML=edVal;
+const inputEditor=(edVal,parentEle)=>{
+    console.log(parentEle)
+    // const li=document.querySelector('.itemName');
+    parentEle.innerHTML=edVal;
 }
