@@ -124,8 +124,6 @@ body{
     margin: 20px;
     min-height: 200px;
     gap: 5px;
-    /* border: 1px solid #000; */
-    /* padding: 0 20px; */
 }
 .feature img{
     height: 100px;
@@ -728,7 +726,7 @@ ul li{
         gap: 20px;
     }
     .title>h2 {
-        font-size: 48px;
+        font-size: 43px;
         font-weight: 500;
     }
   
@@ -862,4 +860,42 @@ ul li{
         padding: 20px;
         flex-wrap: wrap;
     }
+}
+.banner{
+    height: 35vh;
+    background-image: url('./ImagesLogos/banner/b1.jpg');
+    background-position: center;
+    margin-top: 90px;
+    background-repeat: no-repeat;
+    color: #fff;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner>h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.all-products>.products{
+    margin-top: 20px;
+}
+.page-button{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 5px;
+}
+.page-button button{
+    width: 60px;
+    border-radius: 5px;
+    background-color: #088178;
+    border: none;
+    color: #fff;
+}
+.page-button button:hover{
+    cursor: pointer;
+    background-color: #066660;
 }
