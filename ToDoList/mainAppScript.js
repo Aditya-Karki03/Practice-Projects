@@ -1,35 +1,38 @@
 const listItems=document.getElementsByClassName('list-items')[0];
 const bigContainer=document.querySelector('.main-container');
 const TodoItem=document.querySelector('.itemName');
-// if(TodoItem.innerHTML==='Work Out'){
-//     listItems.style.visibility='hidden'
-// }
-// console.log(TodoItem.innerHTML);
-// const text=TodoItem.nextElementSibling.textContent;
-// console.log(text);
-// console.log(listItems);
+const ul=document.querySelector('.todoLists');
+
+
 let iterator=1;
 const add_button=document.getElementsByTagName('button')[0]
+
 add_button.addEventListener('click',()=>{
-    // alert('addButton is clicked');
-    // bigContainer.;
-    // console.log(bigContainer);
-    const input=document.getElementsByClassName('input-button')[0].firstElementChild.value;
-    if(input==''){
-        alert(`Please enter an item`);
-    }
-    // console.log(input);
-    else{
-        TodoItem.innerHTML=input;
-    innerHTMLchanger(iterator,TodoItem,input)
-    document.getElementsByClassName('input-button')[0].firstElementChild.value=' ';
-    iterator++;
-    const clonedItems=listItems.cloneNode(true);
-    clonedItems.classList.remove('hidden');
-    bigContainer.appendChild(clonedItems);
-    }
-    
+    const input=document.querySelector('.input-button').firstElementChild;
+    // console.log(input.value);
+    const InpValue=input.value;
+    inputChanger(InpValue);
 })
+
+const inputChanger=(InpValue)=>{
+    
+    if(!InpValue)    alert('Please enter a value');
+    else {
+        console.log(InpValue)
+        const li=document.createElement('li');
+    li.classList.add('items-list')
+    li.innerHTML=`<div class="tick">
+    <input type="checkbox"/> <label class="itemName">${InpValue}</label>
+  </div>
+  <div class="box">
+    <i class="bx bx-edit"></i><i class="bx bxs-trash"></i>
+  </div>`;
+  ul.appendChild(li);
+    }
+   const editBtn=document.querySelector('.bx-edit');
+}
+
+
 
 function newElement(){
     const input=document.createElement('input');
@@ -40,11 +43,11 @@ function newElement(){
 function innerHTMLchanger(iterator,TodoItem,input){
     TodoItem.innerHTML=input;
 }
-
+// let inputAdded=false;
 bigContainer.addEventListener('click',(e)=>{
     // if(e.target.)
     if(e.target.classList.contains('bxs-trash')){
-        const addedList=e.target.closest('.list-items');
+        const addedList=e.target.closest('.items-list');
         if(addedList){
             addedList.remove();
         }
@@ -60,21 +63,33 @@ bigContainer.addEventListener('click',(e)=>{
             }
         }
     }
-    const EditButt=e.target.classList.contains('box-edit')
-    if(EditButt){
+    const EditButt=e.target.classList.contains('bx-edit')
+    let editedValue;
+    if(e.target.classList.contains('bx-edit')){
         // const inputEle=newElement();
         // EditButt.appendChild(inputEle);
-        alert('Helo');
+        const addedList=e.target.closest('.items-list');
+        let inputAdded=false;
+        if(!inputAdded){
+            let curInnerHTML=addedList.firstElementChild.lastElementChild.innerHTML;
+            if(curInnerHTML!=='<input type="text"/>'){
+            const InpVal=addedList.firstElementChild.lastElementChild.innerHTML;
+            addedList.firstElementChild.lastElementChild.innerHTML=`<input class='inp' type="text" value="${InpVal}"/>`;
+            const input2=document.querySelector('.inp');
+            input2.addEventListener('change',(e)=>{
+                editedValue=input2.value;
+                inputEditor(editedValue)
+                // console.log(editedValue)
+        })
+            console.log(addedList.firstElementChild.lastElementChild.innerHTML.value);
+            inputAdded=true;
+            }    
+        }
+       
+
     }
 })
-
-// const inputBox=document.querySelector('.tick');
-// bigContainer.addEventListener('click',(e)=>{
-//     if(e.target.classList.contains('tick')){
-//         e.target.classList.toggle('checked');
-//     }
-// })
-const editButton=document.querySelector('bx-edit');
-editButton.addEventListener('click',()=>{
-    alert('Hello this is edit button')
-})
+const inputEditor=(edVal)=>{
+    const li=document.querySelector('.itemName');
+    li.innerHTML=edVal;
+}
