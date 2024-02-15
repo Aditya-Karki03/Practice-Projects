@@ -585,6 +585,92 @@ ul li{
     border-radius: 5px;
  }
 
+ /* styles for sProduct.html */
+.ind-clothes{
+    display: flex;
+    margin: 120px 40px 80px 20px;
+    gap: 20px;
+    justify-content: space-between;
+   
+}
+.clothes{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 500px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+.main-clothes>img{
+    height: 440px;
+    width: 440px;
+}
+.color-opt{
+    display: flex;
+    gap: 13px;
+}
+.color-opt>img{
+    width: 100px;
+    height: 100px;
+
+}
+.desc{
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    /* align-items: center; */
+}
+.miscel>h2{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.desc>h3{
+    font-size: 25px;
+}
+select[name='size']{
+    padding: 5px;
+    outline: none;
+}
+.addToCart{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0;
+    gap: 5px;
+}
+.addToCart>input{
+    width: 40px;
+    height: 30px;
+    outline: none;
+}
+.addToCart>button{
+    background-color: #088178;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.addToCart>button:hover{
+    cursor: pointer;
+    background-color: #066660;
+}
+.prod-details>h3{
+    margin: 10px 0;
+}
+.prod-details>p{
+    color: gray;
+}
+.color-opt>img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+ /* **************** */
  @media (max-width:1025px) and (max-height: 1367px){
     #bx-menu,#bx-right-arrow-alt{
         display: inline;
