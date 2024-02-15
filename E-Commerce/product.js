@@ -13,18 +13,16 @@ const mainCloth=document.querySelector('.main-clothes');
 
 const urlParams = new URLSearchParams(window.location.search);
 const imgSrc = urlParams.get('img');
-// console.log("Image Source:", imgSrc); // Log the image source
 
-// Display the image
 
 mainCloth.innerHTML = `${imgSrc}`;
 
+//colors for choosing the colors of the shirts
 const clothOpts=document.querySelectorAll('.multiCloth');
 clothOpts.forEach((clothOpt)=>{
     clothOpt.addEventListener('click',()=>{
-        console.log(clothOpt.src.indexOf('I'))
-        const source=clothOpt.src.slice(22);
-        // console.log(source);
-       mainCloth.innerHTML.replace('./ImagesLogos/products/f3.jpg',source);
+        const source=clothOpt.getAttribute('src');
+        const newImage=document.createElement('img');
+        mainCloth.innerHTML=`<img src="${source}" alt="shirt">`;
     })
 })
